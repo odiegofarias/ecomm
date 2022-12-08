@@ -1,16 +1,19 @@
-{% load static %}
+{% extends 'store/main.html' %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="">
     <title>Document</title>
 </head>
 <body>
     <h1>STORE</h1>
-    <img src="{% static 'images/cart.png' %}" alt="">
+    {% block content %}
+        <h2>Isso aqui é pagina STORE que está herdando o conteúdo de main.html</h2>
+    {% endblock content %}
+    
 </body>
 </html>
