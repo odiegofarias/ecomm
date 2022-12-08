@@ -1,4 +1,5 @@
 {% extends 'store/main.html' %}
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -10,9 +11,43 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>STORE</h1>
     {% block content %}
-        <h2>Isso aqui é pagina STORE que está herdando o conteúdo de main.html</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="{% static 'images/placeholder.png' %}" alt="" class="thumbnail">
+                <div class="box-element product">
+                    <h6><strong>Produto</strong></h6>
+                    <hr>
+
+                    <button class="btn btn-outline-secondary add-btn">Adicionar ao carrinho</button>
+                    <a class="btn btn-outline-success" href="">Ver</a>
+                    <h4 style="display: inline-block; float:right"><strong>R$20</strong></h4>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <img src="{% static 'images/placeholder.png' %}" alt="" class="thumbnail">
+                <div class="box-element product">
+                    <h6><strong>Produto</strong></h6>
+                    <hr>
+
+                    <button class="btn btn-outline-secondary add-btn">Adicionar ao carrinho</button>
+                    <a class="btn btn-outline-success" href="">Ver</a>
+                    <h4 style="display: inline-block; float:right"><strong>R$20</strong></h4>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/placeholder.png' %}" alt="" class="thumbnail">
+                <div class="box-element product">
+                    <h6><strong>Produto</strong></h6>
+                    <hr>
+
+                    <button class="btn btn-outline-secondary add-btn">Adicionar ao carrinho</button>
+                    <a class="btn btn-outline-success" href="">Ver</a>
+                    <h4 style="display: inline-block; float:right"><strong>R$20</strong></h4>
+                </div>
+            </div>
+        </div>  
     {% endblock content %}
     
 </body>
